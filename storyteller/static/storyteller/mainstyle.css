@@ -13,3 +13,8 @@ body{
     width: 50%;
     height: 70%;
 }
+
+h1{
+    text-align:center;
+    font-size: 200%;
+}

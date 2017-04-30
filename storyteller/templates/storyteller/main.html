@@ -2,19 +2,23 @@
 
 <html>
     <head>
+        <title>Story Pilot Recruitment!</title>
         <link rel="stylesheet" type="text/css" href="{% static 'storyteller/mainstyle.css' %}" />
         <script>
             
         </script>
     </head>
     <body>
-    <img src="{% static "storyteller/images/picmain.jpg" %}" alt="My image"/ id="formimage">
+    <p class="recruitbanner"><h1>Three Recruits Needed!  First Come First Serve!</h1></p>
+    <img src="{% static "storyteller/images/picmain.jpg" %}" alt="My image" id="formimage">
     <div id = "formblock">
-    <form action="/storyteller/" method="post">
+    <form action="/storyteller" method="post">
         {% csrf_token %}
-          <label for="name">Pilot name:</label><input id="name" type="text" name="name" value="{{name}}"><br/>
-          <label for="homeworld">Pilot homeworld:</label><input type="text" id="homeworld" name="homeworld" value={{homeworld}}><br/>
-          <label for="shipName">Pilot Ship Name:</label><input type="text" id="shipName" name="shipName" value={{shipName}}><br/>
+        <table align="center">
+          <tr><td><label for="name">Pilot name:</label></td><td><input id="name" type="text" name="name" value="{{name}}"></td></tr><br/>
+          <tr><td><label for="homeworld">Pilot homeworld:</label></td><td><input type="text" id="homeworld" name="homeworld" value={{homeworld}}></td></tr><br/>
+          <tr><td><label for="shipName">Pilot Ship Name:</label></td><td><input type="text" id="shipName" name="shipName" value={{shipName}}></td></tr><br/>
+        </table>    
     <br/><input type="submit" value="Submit!">    
     </form>
     </div>
