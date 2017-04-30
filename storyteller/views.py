@@ -5,6 +5,5 @@ from django.http import HttpResponseRedirect,Http404,HttpResponse
 from .models import Nouns
 
 def index(request):
-    b = Nouns.objects.get(pk=1)
     return render(request, 'storyteller/main.html')
     

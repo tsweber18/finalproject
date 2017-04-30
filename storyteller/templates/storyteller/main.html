@@ -11,6 +11,7 @@
     <img src="{% static "storyteller/images/picmain.jpg" %}" alt="My image"/ id="formimage">
     <div id = "formblock">
     <form action="/storyteller/" method="post">
+        {% csrf_token %}
           <label for="name">Pilot name:</label><input id="name" type="text" name="name" value="{{name}}"><br/>
           <label for="homeworld">Pilot homeworld:</label><input type="text" id="homeworld" name="homeworld" value={{homeworld}}><br/>
           <label for="shipName">Pilot Ship Name:</label><input type="text" id="shipName" name="shipName" value={{shipName}}><br/>
