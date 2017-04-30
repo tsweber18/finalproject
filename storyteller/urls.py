@@ -4,5 +4,4 @@ from . import views
 app_name = 'storyteller'
 urlpatterns = [
     url(r'^$', views.index, name='index'),
-    
     ]

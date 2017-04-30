@@ -6,4 +6,3 @@ from .models import Nouns
 
 def index(request):
     return render(request, 'storyteller/main.html')
-    
