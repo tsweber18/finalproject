@@ -3,6 +3,17 @@
 <html>
     <head>
         <title>The Assignments!</title>
+        <script type="text/javascript">
+        var aname="{{a.name}}";
+        var aship="{{a.shipName}}";
+        var aworld="{{a.homeworld}}";
+        var bname="{{b.name}}";
+        var bship="{{b.shipName}}";
+        var bworld="{{b.homeworld}}";
+        var cname="{{c.name}}";
+        var cworld="{{c.homeworld}}";
+        var cship="{{c.shipName}}";
+        </script>
         <link rel="stylesheet" type="text/css" href="{% static 'storyteller/mainstyle.css' %}" />
         <script src="{%static 'storyteller/scripts.js' %}" type="text/javascript"></script>
     </head>
@@ -17,11 +28,9 @@
             </table>
         <br>
         <br>
-        <div id = "storyPicture">
-            
-        </div>
         <div id = "storyOutput">
         
         </div>
+        <img src="{% static "storyteller/images/ship1.jpg" %}" alt="My image" id="shipimage">
     </body>
 </html>
